@@ -88,7 +88,7 @@
 5. На странице результата вы увидите: `25 celsius = 77 fahrenheit`.
 
 ---
-<html>
+
    <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -216,4 +216,4 @@
 
 </body>
 </html>
-</html>
+
