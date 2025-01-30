@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter - Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover, nav a.active {
+            background-color: #555;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+        }
+        .result {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .result span {
+            font-weight: bold;
+        }
+        .try-again-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .try-again-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Unit Converter</h1>
+</header>
+
+<nav>
+    <a href="/">Length</a>
+    <a href="/weight">Weight</a>
+    <a href="/temperature">Temperature</a>
+
+</nav>
+
+<div class="container">
+    <h2>Result of calculating</h2>
+      <div class="result">
+          <span>{{value}}</span> <span>{{convert_from}}</span> = <span>{{new_value}}</span> <span>{{convert_to}}</span>
+      </div>
+    <form action="/">
+      <button class="try-again-button">Try Again</button>
+    </form>
+
+</div>
+
+</body>
+</html>
